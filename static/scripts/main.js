@@ -111,7 +111,7 @@ function search_word(value) {
 
             if (
                 translation.includes(value) 
-                || word.hiragana.includes(value)
+                || ((word.hiragana).toLowerCase()).includes(value)
             ) {
 
                 scroll_to_result(word.order);
