@@ -110,7 +110,7 @@ function search_word(value) {
             let translation = (word.examples).substring(0, 20);
 
             if (
-                translation.includes(value) 
+                (translation.toLowerCase()).includes(value) 
                 || ((word.hiragana).toLowerCase()).includes(value)
             ) {
 
