@@ -86,7 +86,7 @@ function search() {
 
         } else {
         
-            search_word(input.value);
+            search_word((input.value).toLowerCase());
 
         }
 
