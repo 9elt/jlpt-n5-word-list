@@ -1,0 +1,182 @@
+:root {
+    --bg: #1d1d1d;
+    --color: #fffb;
+    --header: #1117;
+}
+
+html, body {
+    width: 100%;
+}
+
+body {
+    background-color: var(--bg);
+    font-family: 'Courier New', Courier, monospace;
+    color: var(--color);
+    margin: 0;
+}
+
+::-webkit-scrollbar {width: 24px; }
+::-webkit-scrollbar-track {background: var(--bg);}
+::-webkit-scrollbar-thumb {background: var(--color); border: 4px solid var(--bg);}
+
+a {
+    text-decoration: none;
+}
+
+/* index */
+
+#index-section {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    max-width: 100vw;
+    overflow: hidden;
+    background-color: var(--header);
+    backdrop-filter: blur(4px);
+    box-shadow: 0 0 10px #0002;
+}
+
+@media only screen and (min-width: 850px) {
+    #index-section {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+#indexes {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+#indexes li {
+    padding: .3rem;
+    margin: .5rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    display: inline-block;
+    background-color: #0002;
+    transition: all .3s ease-in-out;
+}
+
+#indexes li:hover,
+#indexes li.active {
+    color: #fff;
+    background-color: #61a349;
+}
+
+/* search */
+
+@media only screen and (max-width: 849px) {
+    #search {
+        text-align: center;
+    }
+}
+
+#search input{
+    font-size: 1rem;
+    margin: .5rem;
+    margin-right: 0;
+    border-radius: .5rem;
+    color: var(--color);
+    background-color: #fff2;
+    border: #0002 solid 0.2rem;
+}
+
+#search button{
+    padding: .3rem;
+    border-radius: .5rem;
+    border: none;
+    cursor: pointer;
+    color: var(--color);
+    background-color: #0002;
+    transition: all .3s ease-in-out;
+}
+
+#search button:hover {
+    color: #fff;
+    background-color: #61a349;
+}
+
+/* main section */
+
+#main-section {
+    margin-top: 5rem;
+    width: calc(95% - 2rem);
+    max-width: 60rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+@media only screen and (max-width: 849px) {
+    #main-section {
+        margin-top: 10rem;
+    }
+}
+
+#main-section h2,
+#main-section p {
+    text-align: center;
+}
+
+#list {
+    font-size: 1.5rem;
+    list-style: decimal-leading-zero;
+}
+
+#list li {
+    padding: 1rem;
+    margin-top: .5rem;
+    border-radius: .5rem;
+    transition: all .2s ease-in-out;
+}
+
+pre {
+    max-width: 100%;
+    white-space: pre-wrap;       /* Since CSS 2.1 */
+    white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+}
+
+.title {
+    display: block;
+    border-radius: .5rem;
+    background-color: #0002;
+    color: #fffa;
+}
+
+.kanji {
+    color: #fff;
+    background-color: #61a349;
+    padding: .25rem;
+    margin: .5rem;
+    border-radius: .5rem;
+}
+
+.freq {
+    opacity: .5;
+    font-size: .7rem;
+}
+
+.example {
+    display: block;
+    font-size: .9rem;
+    margin-top: 1rem;
+    background-color: #0001;
+}
+
+footer {
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.theme {
+    font-weight: 600;
+    cursor: pointer;
+}
