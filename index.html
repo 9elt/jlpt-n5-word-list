@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JLPT N5 word list</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header id="index-section">
+        <ul id="indexes"></ul>
+        <form id="search">
+            <input type="text" id="search-val" autocomplete="off">
+            <button type="submit" id="search-btn">
+                <svg x="0px" y="0px" viewBox="0 0 490 490" style="width: 0.8rem;"
+                    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve">
+                    <path d="M483.4,454.444l-121.3-121.4c28.7-35.2,46-80,46-128.9c0-112.5-91.5-204.1-204.1-204.1S0,91.644,0,204.144   
+                    s91.5,204,204.1,204c48.8,0,93.7-17.3,128.9-46l121.3,121.3c8.3,8.3,20.9,8.3,29.2,0S491.8,462.744,483.4,454.444z M40.7,204.144   
+                    c0-90.1,73.2-163.3,163.3-163.3s163.4,73.3,163.4,163.4s-73.3,163.4-163.4,163.4S40.7,294.244,40.7,204.144z"/>
+                </svg>
+            </button>
+        </form>
+    </header>
+
+    <div id="main-section">
+        <h2>JLPT N5 word list</h2>
+        <p>802 words and jisho.org links for (233) kanji</p>
+        <p>
+            this data is taken from
+            <a href="https://www.mlcjapanese.co.jp/" target="_">MLC Meguro Language Center</a>, 
+            please support the original website
+        </p>
+        <ul id="list"></ul>
+    </div>
+
+    <footer>
+        <p>JLPT N5 word list</p>
+        <div class="theme-switcher">
+            <p class="theme-btn" data-theme="light">light theme</p>
+            <p class="theme-btn" data-theme="dark">dark theme</p>
+        </div>
+    </footer>
+
+    <script src="scripts/list.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
