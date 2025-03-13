@@ -1,0 +1,11 @@
+{
+    "name": "jlpt-n5-word-list",
+    "scripts": {
+        "build": "bun build.js",
+        "format": "prettier --write \"**/*.{js,css}\""
+    },
+    "devDependencies": {
+        "clean-css": "^5.3.3",
+        "prettier": "^3.5.3"
+    }
+}

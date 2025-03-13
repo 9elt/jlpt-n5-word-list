@@ -5,15 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JLPT N5 word list</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="dist/index.css">
 </head>
 <body>
-
-    <header id="index-section">
-        <ul id="indexes"></ul>
+    <header>
+        <ul id="index"></ul>
         <form id="search">
-            <input type="text" id="search-val" autocomplete="off">
-            <button type="submit" id="search-btn">
+            <input type="text" autocomplete="off">
+            <button type="submit">
                 <svg x="0px" y="0px" viewBox="0 0 490 490" style="width: 0.8rem;"
                     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve">
                     <path d="M483.4,454.444l-121.3-121.4c28.7-35.2,46-80,46-128.9c0-112.5-91.5-204.1-204.1-204.1S0,91.644,0,204.144   
@@ -23,8 +22,7 @@
             </button>
         </form>
     </header>
-
-    <div id="main-section">
+    <main>
         <h2>JLPT N5 word list</h2>
         <p>802 words and jisho.org links for (233) kanji</p>
         <p>
@@ -33,17 +31,14 @@
             please support the original website
         </p>
         <ul id="list"></ul>
-    </div>
-
+    </main>
     <footer>
         <p>JLPT N5 word list</p>
-        <div class="theme-switcher">
-            <p class="theme-btn" data-theme="light">light theme</p>
-            <p class="theme-btn" data-theme="dark">dark theme</p>
+        <div>
+            <p class="theme-button" data-theme="light">light theme</p>
+            <p class="theme-button" data-theme="dark">dark theme</p>
         </div>
     </footer>
-
-    <script src="scripts/list.js"></script>
-    <script src="scripts/main.js"></script>
+    <script src="dist/index.js"></script>
 </body>
 </html>
