@@ -3,7 +3,7 @@ import CleanCSS from "clean-css";
 const build = await Bun.build({
     entrypoints: ["src/index.js"],
     outdir: "docs",
-    minify: false,
+    minify: true,
 });
 
 if (!build.success) {
