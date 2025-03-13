@@ -119,6 +119,7 @@ searchForm_.addEventListener("submit", (e) => {
     if (!searchStr) {
         searchError();
         searchHistory.length = 0;
+        return;
     }
 
     if (parseInt(searchStr) && parseInt(searchStr) < 803) {
