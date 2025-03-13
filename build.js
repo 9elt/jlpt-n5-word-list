@@ -18,7 +18,4 @@ await Bun.write(
     ).styles
 );
 
-await Bun.write(
-    "docs/index.html",
-    Bun.file("src/index.html")
-);
+await Bun.write("docs/index.html", Bun.file("src/index.html"));
