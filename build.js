@@ -2,7 +2,7 @@ import CleanCSS from "clean-css";
 
 const build = await Bun.build({
     entrypoints: ["src/index.js"],
-    outdir: "dist",
+    outdir: "docs",
     minify: false,
 });
 
@@ -12,8 +12,13 @@ if (!build.success) {
 }
 
 await Bun.write(
-    "dist/index.css",
+    "docs/index.css",
     new CleanCSS().minify(
         await Bun.file("src/index.css").text()
     ).styles
+);
+
+await Bun.write(
+    "docs/index.html",
+    Bun.file("src/index.html")
 );
