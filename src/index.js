@@ -1,4 +1,4 @@
-import { WORDLIST } from "./list";
+import { WORDLIST } from "./wordlist";
 
 document.documentElement.className =
     window.matchMedia &&
